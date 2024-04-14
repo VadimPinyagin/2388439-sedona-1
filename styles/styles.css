@@ -518,9 +518,9 @@ body{
   color:#ffffff;
 
   padding: 35px 70px 70px;
-
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .catalog-title{
@@ -537,12 +537,14 @@ body{
 }
 
 .bread-crumbs{
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .bread-crumbs-list{
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 12px 73px;
   gap: 28px;
   margin: 0;
   margin-bottom: 40px;
@@ -550,9 +552,12 @@ body{
 
 .bread-crumbs-link{
   display: block;
+  background-position: center;
   background-image: url(../images/icon-bread-crumbs.svg);
   width: 12px;
   height: 12px;
+  padding: 6px;
+  background-repeat: no-repeat;
 }
 
 .bread-crumbs-link-hotels{
@@ -571,17 +576,12 @@ body{
 }
 
 .filter-form{
-  display: flex;
-  flex-grow: 1;
-  justify-content: flex-start;
-  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 
 .filter-list{
-  display: flex;
-  flex-direction: column;
   margin: 0;
-  gap: 16px;
 }
 
 .filter-form-group{
@@ -601,11 +601,19 @@ body{
 
 .filter-form-group-price{
   margin-right: 70px;
+  display: flex;
+  column-gap: 2px;
+}
+
+.filter-item{
+  padding-bottom: 16px;
 }
 
 .button-send{
   padding: 8px 50px;
   border-radius: 4px;
+  margin-top: 54px;
+  margin-bottom: 32px;
 }
 
 .filter-title{
@@ -650,25 +658,21 @@ body{
 }
 
 .filter-button-group{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  grid-template-rows: max-content 1fr 1fr;
 }
 
 .button-reset{
   border:none;
   background: none;
-}
-
-.search-results{
-  display: flex;
-  flex-direction: column;
+  padding: 8px 50px;
 }
 
 .search-results-title{
   font-size: 30px;
   line-height: 36px;
   color:#000000;
+  margin: auto;
 }
 
 .catalog-sorting{
@@ -677,6 +681,8 @@ body{
   padding: 50px 70px 40px 70px;
 
 }
+
+/* ------------------------------------------------------- */
 
 .search-results-title{
   padding-right: 200px;
@@ -729,29 +735,29 @@ body{
   border: 2px solid #E5E5E5;
 }
 
+.product-card-in-favorites{
+  background-color: #7DB54F;
+}
+
 .catalog-list{
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0 70px 0 70px;
   list-style: none;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0;
+  padding: 0 70px 40px;
 
 }
 
 .catalog-item{
-  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 20px;
 
-  border-radius: 4px;
   padding: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-
-}
-
-.catalog-item:nth-child(3n){
-  margin-right: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
 }
 
 .product-card-link{
@@ -760,10 +766,31 @@ body{
   line-height: 28px;
   color:#000000;
   text-decoration: none;
+  grid-column: 1/3;
+  grid-row-start: 2;
 }
 
-.product-card-in-favorites{
-  background-color: #7DB54F;
+.product-card{
+  display: block;
+  margin: auto;
+  grid-column: 1 / -1;
+  grid-row-start: 1;
+
+
+}
+
+.product-card-text-price,
+.hotel-rating
+{
+  text-align: right;
+}
+
+.product-card-title,
+.product-card-text
+.product-card-text-price
+.hotel-rating
+{
+  margin: 0;
 }
 
 
