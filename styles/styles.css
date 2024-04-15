@@ -792,10 +792,12 @@ body{
 
 .hotel-rating{
   padding: 10px;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+  text-align: center;
 }
 
-.product-card-text-price,
-.hotel-rating
+.product-card-text-price
 {
   text-align: right;
 }
