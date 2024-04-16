@@ -511,18 +511,6 @@ body{
 
 /*------------------------- Catalog -------------------------*/
 
-.filter{
-  background-color: #7fbaff;
-  background-image: url(../images/background-filter.png);
-  background-size: cover;
-  color:#ffffff;
-
-  padding: 35px 70px 70px;
-  display: grid;
-  /* display: flex;
-  flex-direction: column; */
-}
-
 .catalog{
   padding: 0 70px;
 }
@@ -540,14 +528,12 @@ body{
   margin: 0;
 }
 
-.bread-crumbs{
-  /* display: flex;
-  flex-direction: column; */
-}
+/* --------------------------------- */
+
+
 
 .bread-crumbs-list{
-  display: grid;
-  grid-template-columns: 12px auto;
+  display: flex;
   gap: 28px;
   margin: 0;
   margin-bottom: 40px;
@@ -569,18 +555,29 @@ body{
   font-size: 16px;
   line-height: 21px;
 }
+
+.bread-crumbs-list{
+  list-style: none;
+  padding: 0;
+}
 /* --------------------------------- */
 
-.filter-list,
-.bread-crumbs-list
-{
+.filter{
+  background-color: #7fbaff;
+  background-image: url(../images/background-filter.png);
+  background-size: cover;
+  color:#ffffff;
+
+  padding: 35px 70px 70px;
+}
+
+.filter-list{
   list-style: none;
   padding: 0;
 }
 
 .filter-form{
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
 }
 
 .filter-list{
@@ -657,6 +654,7 @@ body{
   display: grid;
   grid-template-rows: max-content 1fr 1fr;
 
+
 }
 
 .button-send{
@@ -672,6 +670,8 @@ body{
   padding: 8px 50px;
 }
 
+/* ------------------------------------------------------- */
+
 .search-results-title{
   font-size: 30px;
   line-height: 36px;
@@ -685,8 +685,6 @@ body{
   padding: 50px 0 40px 0;
 
 }
-
-/* ------------------------------------------------------- */
 
 .search-results-title{
   padding-right: 200px;
