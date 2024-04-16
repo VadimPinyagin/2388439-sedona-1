@@ -546,9 +546,8 @@ body{
 }
 
 .bread-crumbs-list{
-  /* display: flex; */
   display: grid;
-  grid-template-columns: 12px 73px;
+  grid-template-columns: 12px auto;
   gap: 28px;
   margin: 0;
   margin-bottom: 40px;
