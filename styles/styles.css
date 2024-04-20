@@ -70,6 +70,11 @@ body{
   z-index: 1;
 }
 
+.logo:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
 .navigation-list{
   font-weight: 700;
   font-size: 20px;
@@ -202,6 +207,11 @@ body{
 .user-button:focus{
   background-color: #615048;
 
+}
+
+.user-button:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .user-button:active{
@@ -482,6 +492,11 @@ body{
 
 .search-button:focus{
   background-color: #615048;
+}
+
+.search-button:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .search-button:active{
@@ -771,37 +786,145 @@ body{
   display: flex;
 }
 
-.filter-list{
-  margin: 0;
-}
-
 .filter-form-group{
   border: none;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 .filter-form-group-check{
   margin-right: 70px;
 }
 
+.filter-list{
+  margin: 0;
+}
+
+.filter-title{
+  padding-bottom: 32px;
+}
+
+.filter-item{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: start;
+  padding-bottom: 16px;
+}
+
+/* -----------------------Инфрастуктура------------ */
+
+.input-check{
+  width: 20px;
+  height: 20px;
+  margin: 0;
+
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.input-check[type="checkbox"]:checked {
+  background-image: url("../images/check-on.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.input-check:hover,
+.input-check:hover + .label-check {
+  opacity: 0.6;
+}
+
+.input-check:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.input-check:active,
+.input-check:active + .label-check {
+  opacity: 0.3;
+}
+
+.input-check:disabled,
+.input-check:disabled + .label-check {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
+/* --------------------------------------------- */
+
+/* ----------------------Тип жилья-------------- */
+
 .filter-form-group-radio{
   margin-right: 140px;
 }
+
+.input-radio[type="radio"] {
+  border-radius: 50%;
+}
+
+.input-radio{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  background-color: #ffffff;
+  border: none;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+.input-radio[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 10px;
+  height: 10px;
+
+  background-color: #3f5e72;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-radio:hover,
+.input-check:hover + .label-radio {
+  opacity: 0.6;
+}
+
+.input-radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px #83b3d3;
+}
+
+.input-radio:active,
+.input-radio:active + .label-radio {
+  opacity: 0.3;
+}
+
+.input-radio:disabled,
+.input-radio:disabled + .label-radio {
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
+/* --------------------------------------------- */
 
 .filter-form-group-price{
   margin-right: 70px;
   display: flex;
   column-gap: 2px;
-}
-
-.filter-item{
-  padding-bottom: 16px;
-}
-
-.filter-title{
-  padding-bottom: 32px;
+  position: relative;
 }
 
 .input-price{
@@ -838,7 +961,7 @@ body{
 
 .label-price{
   line-height: 24px;
-  color:#000000;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .filter-button-group{
@@ -855,10 +978,45 @@ body{
   margin-bottom: 32px;
 }
 
-.button-reset{
-  border:none;
-  background: none;
+.button-send:hover{
+  background-color:#68A2CA;
+}
+
+.button-send:focus{
+  background-color:#68A2CA;
+  outline: none;
+}
+
+.button-send:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  background-color: transparent;
   padding: 8px 50px;
+}
+
+.button-reset:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+
+.button-reset:disabled {
+  color: rgba(255, 255, 255, 0.1);
+
+  background-color: transparent;
 }
 
 /* ------------------------------------------------------- */
