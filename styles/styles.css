@@ -165,8 +165,6 @@ body{
   opacity: 0.3;
 }
 
-
-
 .user-link-search{
   background-image: url(../images/icon-search.svg);
 }
@@ -207,6 +205,12 @@ body{
   place-items: center;
 }
 
+a:not([href]:disabled){
+  background-color: #e5e5e5;
+  pointer-events: none;
+}
+
+
 .user-button:hover{
   background-color: #615048;
 }
@@ -238,13 +242,6 @@ body{
   border: none;
   cursor: pointer;
 }
-
-
-/* button:disabled{
-  background-color: #e5e5e5;
-  pointer-events: none;
-} */
-
 
 .user-button,
 .product-card-more
