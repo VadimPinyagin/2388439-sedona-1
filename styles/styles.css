@@ -158,6 +158,7 @@ body{
 .user-link:focus-visible{
   outline: 3px solid #82B3D3;
   border-radius: 4px;
+  opacity: 1;
 }
 
 .user-link:active {
@@ -206,7 +207,7 @@ body{
   place-items: center;
 }
 
-/* .user-button:hover{
+.user-button:hover{
   background-color: #615048;
 }
 
@@ -223,7 +224,7 @@ body{
 .user-button:active{
   color: rgba(255, 255, 255, 0.3);
   background-color: #756157;
-} */
+}
 
 .button{
   font-family: inherit;
@@ -239,10 +240,10 @@ body{
 }
 
 
-.user-button:disabled{
+/* button:disabled{
   background-color: #e5e5e5;
   pointer-events: none;
-}
+} */
 
 
 .user-button,
@@ -762,6 +763,23 @@ body{
   background-repeat: no-repeat;
 }
 
+.bread-crumbs-link:hover,
+.bread-crumbs-link:focus
+{
+  opacity: 0.6;
+}
+
+.bread-crumbs-link:active{
+  opacity: 0.3;
+}
+
+.bread-crumbs-link:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+  opacity: 1;
+
+}
+
 .bread-crumbs-link-hotels{
   text-decoration: none;
   color:#ffffff;
@@ -776,6 +794,11 @@ body{
 
 .bread-crumbs-link-hotels:focus{
   color:#ffffff;
+}
+
+.bread-crumbs-link-hotels:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .bread-crumbs-link-hotels:active{
@@ -855,6 +878,11 @@ body{
 }
 
 .input-check:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #83b3d3;
+}
+
+.input-check:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px #83b3d3;
 }
@@ -938,7 +966,7 @@ body{
 .filter-form-group-price{
   margin-right: 70px;
   display: flex;
-  column-gap: 2px;
+  column-gap: 3px;
   position: relative;
 }
 
@@ -946,26 +974,47 @@ body{
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  width: 100px;
+  width: 83px;
   height: 48px;
   background-color: #f2f2f2;
   border: none;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
-.input-price-from{
+.from-input-price{
   border-radius: 4px 0 0 4px;
+}
+
+.from-input-price:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px 0 0 4px;
+}
+
+.from-input-price:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 4px 0 0 4px;
+ color:#000000;
+}
+
+.to-input-price:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 0 4px 4px 0;
+}
+
+.to-input-price{
+  border-radius: 0 4px 4px 0;
+}
+
+.to-input-price:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius:0 4px 4px 0;
 }
 
 .label-price-from{
   position: absolute;
   left: 100px;
   top: 12px;
-}
-
-.input-price-to{
-  border-radius: 0 4px 4px 0;
 }
 
 .label-price-to{
@@ -982,8 +1031,6 @@ body{
 .filter-button-group{
   display: grid;
   grid-template-rows: max-content 1fr 1fr;
-
-
 }
 
 .button-send{
