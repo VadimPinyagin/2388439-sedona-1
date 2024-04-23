@@ -47,7 +47,7 @@
             </a>
           </li>
           <li class="user-item user-item-button">
-            <a href="#" class="button user-button">Хочу сюда!</a>
+            <a href="#" class="button user-button button-disabled">Хочу сюда!</a>
           </li>
 
         </ul>
@@ -126,15 +126,27 @@
 
           </fieldset>
 
-          <fieldset class="filter-form-group filter-form-group-price">
-
+          <fieldset class="filter-form-group range-price-group">
             <legend class="filter-title">Стоимость, &#8381; :</legend>
 
-            <input class="input-price from-input-price" name="price-min" id="apartments-min" placeholder="0">
-            <label class="label-price label-price-from" for="apartments-min">от</label>
+            <div class="range-price">
+              <input class="input-price from-input-price" name="price-min" id="apartments-min" placeholder="0">
+              <label class="label-price label-price-from" for="apartments-min">от</label>
 
-            <input class="input-price to-input-price" name="price-max" id="apartments-max" placeholder="9000">
-            <label class="label-price label-price-to" for="apartments-max">до</label>
+              <input class="input-price to-input-price" name="price-max" id="apartments-max" placeholder="9000">
+              <label class="label-price label-price-to" for="apartments-max">до</label>
+            </div>
+
+            <div class="range-scale">
+              <div class="range-bar" style="width: 78%;">
+                <button class="range-toggle-btn range-toggle-btn-min" type="button">
+                  <span class="visually-hidden">Изменить минимальную цену.</span>
+                </button>
+                <button class="range-toggle-btn range-toggle-btn-max" type="button">
+                  <span class="visually-hidden">Изменить максимальную цену.</span>
+                </button>
+              </div>
+            </div>
 
           </fieldset>
 
@@ -196,7 +208,7 @@
 
             <p class="product-card-text">Гостиница</p>
             <p class="product-card-text-price">От <span>4000 &#8381;</span></p>
-            <a href="#" class="button product-card-more">Подробнее</a>
+            <a href="#" class="button product-card-more button-disabled">Подробнее</a>
             <button type="button" class="button button-second product-card-favorites">В избранное</button>
 
             <p class="hotels-rating-star hotels-rating-star-4">
@@ -218,7 +230,7 @@
 
             <p class="product-card-text">Гостиница</p>
             <p class="product-card-text-price">От <span>5000 &#8381;</span></p>
-            <a href="#" class="button product-card-more">Подробнее</a>
+            <a href="#" class="button product-card-more button-disabled">Подробнее</a>
             <button type="button" class="button product-card-in-favorites">В избранном</button>
 
             <p class="hotels-rating-star hotels-rating-star-4">
@@ -240,7 +252,7 @@
 
             <p class="product-card-text">Гостиница</p>
             <p class="product-card-text-price">От <span>2500 &#8381;</span></p>
-            <a href="#" class="button product-card-more">Подробнее</a>
+            <a href="#" class="button product-card-more button-disabled">Подробнее</a>
             <button type="button" class="button button-second product-card-favorites">В избранное</button>
 
             <p class="hotels-rating-star hotels-rating-star-4">
@@ -262,7 +274,7 @@
 
             <p class="product-card-text">Гостиница</p>
             <p class="product-card-text-price">От <span>4000 &#8381;</span></p>
-            <a href="#" class="button product-card-more">Подробнее</a>
+            <a href="#" class="button product-card-more button-disabled">Подробнее</a>
             <button type="button" class="button button-second product-card-favorites">В избранное</button>
 
             <p class="hotels-rating-star hotels-rating-star-4">
