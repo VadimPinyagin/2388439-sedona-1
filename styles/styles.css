@@ -204,8 +204,9 @@ body{
   display: grid;
   place-items: center;
 }
-
-a:not([href]:disabled){
+.button:disabled,
+.button-disabled:not([href])
+{
   background-color: #e5e5e5;
   pointer-events: none;
 }
@@ -1105,6 +1106,58 @@ a:not([href]:disabled){
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
+  color:#333333;
+
+  background-color: transparent;
+  background-image: url("../images/select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.search-results-select:hover {
+
+  border-color: #68a2ca;
+}
+
+.search-results-select:focus,
+.search-results-select:focus-visible {
+
+  border-color: #68a2ca;
+  outline: none;
+}
+
+
+.search-results-select:disabled {
+
+  color: #000000;
+
+  border-color: #000000;
+  opacity: 0.3;
+
+  pointer-events: none;
+}
+
+.button-view:hover {
+  border-color: #000000;
+}
+
+.button-view:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.vbutton-view:active {
+  border-color: #000000;
+}
+
+.view-link-active {
+  border-color: #000000;
 }
 
 .display-view-list{
