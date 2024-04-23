@@ -671,9 +671,7 @@ body{
 }
 .phone:active{
   color:rgba(117, 97, 87, 0.3);
-
 }
-
 
 .developer{
   display: block;
@@ -725,6 +723,7 @@ body{
 
 .bread-crumbs-list{
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
 }
@@ -1343,6 +1342,43 @@ body{
   margin: 0;
 }
 
+.product-card-link:hover{
+  color: #756157;
+}
+
+.product-card-link:focus{
+  color: #756157;
+  outline: none;
+}
+
+.product-card-link:focus-visible{
+  color: #756157;
+  outline: none;
+}
+
+.product-card-link:active{
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.hotels-rating-star {
+  height: 37px;
+  margin: 0;
+  background-image: url("../images/icon-star.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.hotels-rating-star-4 {
+  width: 90px;
+}
+
+.hotels-rating-star-3 {
+  width: 70px;
+}
+
+.hotels-rating-star-2 {
+  width: 50px;
+}
 
 /* --------------------------------- */
 
