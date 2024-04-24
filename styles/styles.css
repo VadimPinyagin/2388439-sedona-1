@@ -1398,6 +1398,17 @@ body{
 
 .pagination-current{
   background-color:rgba(242, 242, 242, 1);
+  display: block;
+  padding: 12px;
+  min-width: 60px;
+
+  color: #000000;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .pagination-link{
@@ -1415,21 +1426,49 @@ body{
 
 }
 
-.pagination-current{
-  color:#000000;
-}
-
-.pagination-points{
+.pagination-more{
   background:none;
 }
 
-
-.pagination-points{
+.pagination-more{
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   color:#000000;
 }
+
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #82b3d3;
+}
+
+.pagination-more {
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  min-height: 60px;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.pagination-more:hover{
+  background-color:rgba(242, 242, 242, 1);
+}
+
+.pagination-more:focus-visible {
+  background-color:rgba(242, 242, 242, 1);
+}
+
 
 .subscribe-inner{
   background: none;
