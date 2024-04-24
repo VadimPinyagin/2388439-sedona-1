@@ -324,6 +324,7 @@ body{
   padding-bottom: 30px;
   position: relative;
 }
+
 .advantages-wrapper .advantages-item-title-content::after{
   background-color: #ffffff;
 }
@@ -337,10 +338,10 @@ body{
 
 .item-title::after{
   content: "";
-
-  bottom: 0;
-  left: 50%;
   display: block;
+  position: relative;
+  left: 50%;
+  top: 30px;
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
