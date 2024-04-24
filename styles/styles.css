@@ -52,22 +52,33 @@ body{
 
 }
 
-.header{
-  display: flex;
-  padding: 0 70px;
+.header {
   position: relative;
+  z-index: 1;
 }
 
-.main-navigation{
-  display: flex;
-  width: 1200px;
-
+.main-navigation {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  align-items: center;
+  padding: 0 70px;
 }
 
 .logo{
   display: block;
-  position: absolute;
-  z-index: 1;
+  width: 140px;
+  height: 70px;
+  margin-right: 28px;
+  margin-bottom: -6px;
+}
+
+.logo:focus,
+.logo:hover {
+  opacity: 0.6;
+}
+
+.nav-logo:active {
+  opacity: 0.3;
 }
 
 .logo:focus-visible{
@@ -83,12 +94,10 @@ body{
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-left: 238px;
   min-height: 64px;
 
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
   align-content: center;
   gap: 30px;
 
@@ -131,8 +140,7 @@ body{
 
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-
+  justify-content: flex-end;
   position: relative;
 }
 
@@ -192,18 +200,16 @@ body{
   color: #ffffff;
 }
 
-.user-item-button{
-  position: absolute;
-  top: 14px;
-  left: 108px;
-}
-
 .user-button{
+  width: 160px;
+  margin-left: 24px;
   border-radius:4px;
-  padding: 8px 34px;
+  padding: 8px;
   display: grid;
   place-items: center;
+  box-sizing: border-box;
 }
+
 .button:disabled,
 .button-disabled:not([href])
 {
@@ -290,7 +296,7 @@ body{
 
 }
 
-.main-page{
+.main{
   min-height: 100%;
 }
 
@@ -356,9 +362,6 @@ body{
   width: 100%;
   height: 100%;
 }
-
-
-
 
 .advantages-list{
   list-style: none;
@@ -525,7 +528,6 @@ body{
   padding: 96px 70px 104px;
 }
 
-
 .subscribe-form{
   display: flex;
 }
@@ -563,7 +565,6 @@ body{
   background-color:  #E6E6E6;
 }
 
-
 .subscribe-button{
   max-width: 232px;
   padding: 8px 50px;
@@ -586,14 +587,53 @@ body{
   background-color: #82B3D3;
 }
 
-
 .product-card-more{
   padding: 8px 26px;
   border-radius: 4px;
 }
 
+.product-card-more:hover{
+  background-color: #615048;
+}
+
+.product-card-more:focus{
+  background-color: #615048;
+
+}
+
+.product-card-more:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+.product-card-more:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #756157;
+}
+
+
 .product-card-favorites{
   padding: 8px 20px;
+  border-radius: 4px;
+}
+
+.product-card-favorites:hover{
+  background-color: #68A2CA;
+}
+
+.product-card-favorites:focus{
+  background-color:  #68A2CA;
+  outline: none;
+}
+
+.product-card-favorites:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
+;
+}
+
+.product-card-favorites:focus-visible{
+  outline: 3px solid #82B3D3;
   border-radius: 4px;
 }
 
@@ -601,6 +641,30 @@ body{
   padding: 8px 18px;
   border-radius: 4px;
 }
+
+.product-card-in-favorites:hover{
+  background-color:#6C9E42;
+;
+}
+
+.product-card-in-favorites:focus{
+  background-color:#6C9E42;
+;
+  outline: none;
+}
+
+.product-card-in-favorites:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #7DB54F;
+;
+}
+
+.product-card-in-favorites:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
+}
+
+
 
 /* ---------------------------------------------------------------------- */
 
@@ -665,10 +729,12 @@ body{
 .phone:hover{
   color:#756157;
 }
+
 .phone:focus{
   color:#756157;
   outline: none;
 }
+
 .phone:active{
   color:rgba(117, 97, 87, 0.3);
 }
@@ -696,9 +762,6 @@ body{
 .developer:active{
   color: rgba(117, 97, 87, 0.3);
 }
-
-
-
 
 /*------------------------- Catalog -------------------------*/
 
@@ -734,8 +797,8 @@ body{
 }
 
 .bread-crumbs-item:not(:last-child) {
-    position: relative;
-    margin-right: 28px;
+  position: relative;
+  margin-right: 28px;
 }
 .bread-crumbs-item:not(:last-child)::after{
   content: "";
@@ -801,6 +864,7 @@ body{
 .bread-crumbs-link-hotels:active{
   color: rgba(255, 255, 255, 0.3);
 }
+
 /* --------------------------------- */
 
 .filter{
@@ -895,8 +959,6 @@ body{
 
   pointer-events: none;
 }
-
-/* --------------------------------------------- */
 
 /* ----------------------Тип жилья-------------- */
 
@@ -1166,7 +1228,6 @@ body{
   display: flex;
   align-items: center;
   padding: 50px 0 40px 0;
-
 }
 
 .search-results-title{
@@ -1195,7 +1256,6 @@ body{
 }
 
 .search-results-select:hover {
-
   border-color: #68a2ca;
 }
 
@@ -1206,11 +1266,8 @@ body{
   outline: none;
 }
 
-
 .search-results-select:disabled {
-
   color: #000000;
-
   border-color: #000000;
   opacity: 0.3;
 
@@ -1286,11 +1343,9 @@ body{
   padding-bottom: 40px;
 
   border-bottom: 1px solid #e6e6e6;
-
 }
 
 .catalog-item{
-
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px 20px;
@@ -1315,6 +1370,7 @@ body{
   grid-row-start: 1;
   margin: 0;
 }
+
 .product-card-img{
   display: block;
   object-fit: cover;
@@ -1329,8 +1385,7 @@ body{
   text-align: center;
 }
 
-.product-card-text-price
-{
+.product-card-text-price{
   text-align: right;
 }
 
@@ -1449,6 +1504,13 @@ body{
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #82b3d3;
+}
+
+.pagination-current:focus-visible,
+.pagination-more:focus-visible,
+.pagination-link:focus-visible{
+  outline: 3px solid #82B3D3;
+  border-radius: 4px;
 }
 
 .pagination-more {
