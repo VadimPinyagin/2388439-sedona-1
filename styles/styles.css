@@ -183,21 +183,17 @@ body{
 }
 
 .user-favorites-num{
-  display: grid;
-  place-items: center;
-
-  width: 20px;
-  height: 20px;
-
   position: absolute;
-  left: 20px;
-  bottom: 23px;
-
-  background-color: #7DB54F;
-  border-radius: 50%;
+  top: 2px;
+  right: 0;
+  display: inline-block;
+  padding: 5px;
   font-size: 10px;
   line-height: 10px;
+  text-align: center;
   color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 10px;
 }
 
 .user-button{
@@ -341,7 +337,7 @@ body{
 
 .item-title::after{
   content: "";
-  position: absolute;
+
   bottom: 0;
   left: 50%;
   display: block;
@@ -681,20 +677,18 @@ body{
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .social-link{
   display: block;
   width: 48px;
   height: 40px;
-  background-repeat: no-repeat;
-  background-position: center;
   color:#82B3D3;
 }
 
 .social-icon{
   fill: currentColor;
-  padding: 12px;
 }
 
 .social-link:hover{
@@ -1423,6 +1417,10 @@ body{
   background-position: left center;
 }
 
+.hotels-rating-star-5 {
+  width: 114px;
+}
+
 .hotels-rating-star-4 {
   width: 90px;
 }
@@ -1433,6 +1431,10 @@ body{
 
 .hotels-rating-star-2 {
   width: 50px;
+}
+
+.hotels-rating-star-1 {
+  width: 24px;
 }
 
 /* --------------------------------- */
