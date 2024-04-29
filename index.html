@@ -220,7 +220,6 @@
           <path d="M109.4 27.3564L105.8 18.4564H103.6L108.4 30.0564C108.1 30.9564 107.7 31.2564 106.7 31.2564H104.2V33.2564H106.7C108.5 33.2564 109.5 32.4564 110.2 30.6564L114.9 18.4564H112.8L109.4 27.3564Z" />
         </svg>
       </a>
-
     </footer>
 
     <div class="modal-container">
@@ -228,13 +227,11 @@
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-
-        <section class="modal-window">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-
-          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form-group-date">
-              <label class="data-label" for="arrival-date">Дата Заезда:</label>
+        <section class="modal-content">
+          <h2 class="modal-title page-title">Поиск гостиницы в Седоне</h2>
+          <form class="modal-search-form form" action="https://echo.htmlacademy.ru/" method="post">
+            <fieldset class="form-group date">
+              <label class="form-label data-label" for="arrival-date">Дата Заезда:</label>
               <div class="date-input-container">
                 <input class="date-input form-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
@@ -289,6 +286,7 @@
         </section>
       </div>
     </div>
+
   </div>
 </body>
 
