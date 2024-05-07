@@ -253,7 +253,7 @@ body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   width: 100%;
   height: 57px;
   background-image: url("../images/divider.svg");
@@ -1449,12 +1449,15 @@ body{
 }
 
 .subscribe-inner-title{
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 22px;
 }
 
 .subscribe-inner-text {
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 52px;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /* ---------------------------------------------------- */
@@ -1466,7 +1469,7 @@ body{
   left: 0;
   z-index: 2;
   width: 100%;
-  height: 100%;
+margin: 0 0 64px;  height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
 
@@ -1489,9 +1492,14 @@ body{
 }
 
 .modal-title {
-  margin-bottom: 63px;
+  margin: 0 0 64px;
   padding-right: 40px;
-  text-align: left;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+
+
 }
 
 .modal-close-button {
@@ -1573,7 +1581,8 @@ body{
 }
 
 .date-input {
-  width: 407px;
+  position: relative;
+  width: 400px;
   padding: 12px 20px;
   font-weight: 700;
   font-size: 18px;
@@ -1586,7 +1595,7 @@ body{
   background-image: url("../images/icon-date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  background-size: 20px;
+  background-size: 16px;
 }
 
 .form-message {
@@ -1617,7 +1626,7 @@ body{
   position: relative;
   background-color: #f2f2f2;
   border-radius: 4px;
-  padding: 10px 30px;
+  padding: 12px 28px;
 }
 
 .people-button {
@@ -1709,7 +1718,7 @@ body{
   left: 50%;
   z-index: 10;
   display: none;
-  width: 256px;
+  width: 216px;
   margin: 15px 0 0;
   padding: 20px 20px 23px;
   font-size: 16px;
