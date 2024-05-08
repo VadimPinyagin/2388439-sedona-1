@@ -253,7 +253,7 @@ body{
   content: "";
   position: absolute;
   left: 0;
-  bottom: -2px;
+  bottom: 0;
   width: 100%;
   height: 57px;
   background-image: url("../images/divider.svg");
@@ -283,6 +283,10 @@ body{
   margin-bottom: 25px;
 }
 
+.services-title{
+  margin-bottom: 20px;
+}
+
 .description-text{
   font-size: 22px;
   line-height: 26px;
@@ -296,8 +300,7 @@ body{
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 0 25px 30px 22px;
   position: relative;
 }
 
@@ -307,8 +310,7 @@ body{
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 0 25px 28px 22px;
   position: relative;
 }
 
@@ -337,8 +339,9 @@ body{
 .advantages-wrapper{
   max-width: 400px;
   min-height: 385px;
-  text-align: center;
   box-sizing: border-box;
+  padding: 103px 84px;
+  text-align: center;
 }
 
 .main-page-text{
@@ -360,13 +363,8 @@ body{
   margin: 0;
 }
 
-.advantages-wrapper{
-  padding: 100px 92px;
-  text-align: center;
-}
-
 .advantages-item{
-  padding: 110px 85px;
+  padding: 112px 84px;
   max-width: 400px;
   min-height: 385px;
   text-align: center;
@@ -380,8 +378,7 @@ body{
 
 .advantages-item-text{
   margin: 0;
-  margin-left: -1px;
-  margin-bottom: -2px;
+  line-height: 21px;
 }
 
 .advantages-image-content{
@@ -410,7 +407,7 @@ body{
 }
 
 .services-description{
-  padding: 62px 70px;
+  padding: 64px 70px;
 }
 
 .services-list{
@@ -430,7 +427,7 @@ body{
 }
 
 .services-item-title{
-  margin: 10px auto 28px;
+  margin: 11px auto 29px;
   text-align: center;
   text-transform: uppercase;
   font-size: 24px;
@@ -468,7 +465,11 @@ body{
 }
 
 .search{
-  padding: 94px 70px;
+  padding: 95px 70px;
+}
+
+.search-description-title{
+  margin-bottom: 20px;
 }
 
 .search-button{
@@ -480,7 +481,7 @@ body{
   min-height: 36px;
   padding: 8px 50px;
   margin: auto;
-  margin-top: 52px;
+  margin-top: 54px;
   background-color: #756157;
 }
 
@@ -505,7 +506,7 @@ body{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 96px 70px 104px;
+  padding: 98px 70px 104px;
 }
 
 .subscribe-form{
@@ -631,7 +632,7 @@ body{
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-  padding: 46px 70px;
+  padding: 44px 70px;
 }
 
 .social-list{
@@ -645,7 +646,7 @@ body{
 
 .social-link{
   display: block;
-  width: 48px;
+  width: 47px;
   height: 40px;
   color:#82B3D3;
 }
