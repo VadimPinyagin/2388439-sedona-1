@@ -964,6 +964,10 @@ body{
   appearance: none;
 }
 
+.people-input[type="number"]{
+  -moz-appearance: textfield;
+}
+
 .input-price{
   font-weight: 700;
   font-size: 18px;
