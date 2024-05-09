@@ -1623,6 +1623,20 @@ margin: 0 0 64px;  height: 100%;
   background-size: 16px;
 }
 
+.date-input:hover{
+  background-color: #E6E6E6;
+}
+
+.date-input:focus{
+  outline: 3px solid #83B3D3;
+}
+
+.date-input:not(:placeholder-shown){
+  outline: 2px solid #000000;
+  border-radius: 4px;
+  color: #000000;
+}
+
 .form-message {
   display: inline-block;
   margin: 5px 0 0 20px;
@@ -1704,8 +1718,8 @@ margin: 0 0 64px;  height: 100%;
   background-color: #000000;
 }
 
-.people-button:focus {
-  box-shadow: 0 0 0 3px #82b3d3;
+.people-button:focus-visible {
+  outline: 3px solid #82b3d3;
 }
 
 .people-button:active::after,
@@ -1779,4 +1793,17 @@ margin: 0 0 64px;  height: 100%;
   font-size: 20px;
   line-height: 24px;
   border-radius: 10px;
+}
+
+.form-button:hover{
+  background-color: #68A2CA;
+}
+
+.form-button:focus{
+  background-color: #68A2CA;
+}
+
+.form-button:active{
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #82B3D3;
 }

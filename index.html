@@ -222,7 +222,8 @@
       </a>
     </footer>
 
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
+      <!-- modal-container-close -->
       <div class="modal modal-search">
         <button class="modal-close-button" type="button">
           <span class="visually-hidden">Закрыть</span>
@@ -233,7 +234,7 @@
             <fieldset class="form-group date">
               <label class="form-label data-label" for="arrival-date">Дата Заезда:</label>
               <div class="date-input-container">
-                <input class="date-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" value="27 апреля 2020" required>
+                <input class="date-input" type="text" name="arrival-date" id="arrival-date" placeholder="Укажите дату" required>
                 <span class="form-message form-message-error">Мы не можем отправить вас в прошлое.</span>
               </div>
             </fieldset>
@@ -241,7 +242,7 @@
             <fieldset class="form-group date">
               <label class="form-label data-label" for="departure-date">Дата Выезда:</label>
               <div class="date-input-container">
-                <input class="date-input" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" value="1 сентября 2021" required>
+                <input class="date-input" type="text" name="departure-date" id="departure-date" placeholder="Укажите дату" required>
                 <span class="form-message">На эти даты есть свободные номера. Пока есть.</span>
               </div>
             </fieldset>
@@ -263,7 +264,7 @@
               <div class="tooltip-container">
                 <label class="form-label adults-label" for="children">Дети:</label>
                 <div class="tooltip">
-                  <button class="tooltip-toggle" type="button" aria-labelledby="info-label-children">
+                  <button class="tooltip-toggle" type="button" aria-label="info-label-children">
                     <span class="visually-hidden">Дополнительная информация.</span>
                   </button>
                   <p class="tooltip-text" id="info-label-children">Укажите количество детей,<br> которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
