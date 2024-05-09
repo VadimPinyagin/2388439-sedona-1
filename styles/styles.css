@@ -985,6 +985,30 @@ body{
   padding-right: 40px;
 }
 
+.input-price:hover{
+  background-color:#E6E6E6;
+}
+
+.input-price:focus{
+
+}
+
+.to-input-price:focus-visible{
+  outline:3px solid #83B3D3;
+  border-radius: 0 4px 4px 0;
+}
+
+.from-input-price:focus-visible{
+  outline:3px solid #83B3D3;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-price:active{
+
+}
+
+
+
 .input-price[type="number"]{
   color: #000000;
 }
