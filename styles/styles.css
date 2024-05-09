@@ -522,7 +522,7 @@ body{
 }
 
 .subscribe-input{
-  font-family:"PT sans";
+  font-family:"PT sans, sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
