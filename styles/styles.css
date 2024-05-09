@@ -363,7 +363,7 @@ body{
 
 .advantages-item{
   padding: 112px 84px;
-  max-width: 400px;
+  width: 400px;
   min-height: 385px;
   text-align: center;
   box-sizing: border-box;
@@ -410,13 +410,14 @@ body{
 
 .services-list{
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .services-item{
-  min-width: 400px;
+  width: 400px;
   min-height: 385px;
   padding: 173px 80px 82px;
   background-repeat: no-repeat;
@@ -1210,6 +1211,7 @@ body{
 
 .display-view-list{
   display: flex;
+  flex-wrap: wrap;
   width: 160px;
   list-style: none;
   padding: 0;
