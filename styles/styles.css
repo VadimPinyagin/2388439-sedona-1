@@ -1169,7 +1169,7 @@ body {
   margin-right: 70px;
   font-size: 18px;
   line-height: 21px;
-  font-family: "PT sans";
+  font-family: inherit;
   cursor: pointer;
   color: #333333;
   background-color: transparent;
@@ -1463,7 +1463,6 @@ body {
   line-height: 26px;
 }
 
-/* ---------------------------------------------------- */
 
 .modal-container {
   box-sizing: border-box;
