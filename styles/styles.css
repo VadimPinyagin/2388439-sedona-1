@@ -1156,7 +1156,7 @@ body {
 .catalog-sorting {
   display: flex;
   align-items: center;
-  padding: 50px 0 40px 0;
+  padding: 48px 0 40px 0;
 }
 
 .search-results-title {
@@ -1261,18 +1261,18 @@ body {
   list-style: none;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 22px 19px;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
+  padding-bottom: 38px;
   border-bottom: 1px solid #e6e6e6;
 }
 
 .catalog-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 14px 20px;
-  padding: 20px;
+  gap: 14px 19px;
+  padding: 17px 19px;
   border-radius: 4px;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
 }
@@ -1319,7 +1319,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
-  margin: 10px auto;
+  margin: 2px 0 2px 0;
 }
 
 .product-card-text,
@@ -1371,7 +1371,7 @@ body {
 .pagination-list {
   list-style: none;
   margin: 0;
-  padding: 40px 0;
+  padding: 43px 0 39px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -1418,6 +1418,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #000000;
+  padding-top: 17px;
 }
 
 .pagination-link:hover {
